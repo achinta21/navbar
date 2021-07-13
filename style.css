@@ -204,6 +204,10 @@ hr{
    }
 @media only screen and (max-width:688px) {
     header{
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
         display:block;
         justify-content: center;
         align-items: center;
@@ -211,7 +215,7 @@ hr{
        
     }
     .navigtion{
-        margin-left:100px;
+        margin-left:150px;
         display: block;
         
     }
@@ -224,7 +228,7 @@ hr{
         flex-direction: column;
     }
     nav li{
-       margin-left: 80px;
+       margin-left: 120px;
     }
     nav a{
         display: block;
@@ -233,11 +237,14 @@ hr{
     .profile-img{
         display:block;
         justify-content: center;
-        margin-left: 130px;
+        margin-left: 160px;
        
     }
     .continer{
-        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        width:100%;
+        margin: 0;
     }
     
     .players,.blogs,.courses{
@@ -248,10 +255,32 @@ hr{
         justify-content: center;
         align-items: center;
     }
+    .blog{
+        text-align: center;
+    }
     .player,.blog,.course{
         flex-direction: column;
     }
     .course{
-        margin-left:30%;
+        text-align: center;
+        margin-bottom: 20px;
+        border-radius: 25px;
+    }
+    .course-details{
+        font-size: 12px;
+    }
+    .section-title{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        color: rgb(210, 30, 30);
+        padding: 10px;
+    }
+    .course-info{
+        justify-content: center;
+        margin-left: 40px;
+    }
+    .blog-info{
+        font-size:15px;
     }
 }
