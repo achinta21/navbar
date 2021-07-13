@@ -39,7 +39,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 180px;
+    margin-right: 176px;
 }
 nav ul{
     display: flex;
@@ -202,3 +202,56 @@ hr{
     padding: 5px;
     margin-left: 20px;
    }
+@media only screen and (max-width:688px) {
+    header{
+        display:block;
+        justify-content: center;
+        align-items: center;
+        height: 42vh;
+       
+    }
+    .navigtion{
+        margin-left:100px;
+        display: block;
+        
+    }
+  
+    nav{
+        display: block;
+    }
+    nav ul{
+        
+        flex-direction: column;
+    }
+    nav li{
+       margin-left: 80px;
+    }
+    nav a{
+        display: block;
+        padding: 10px;
+    }
+    .profile-img{
+        display:block;
+        justify-content: center;
+        margin-left: 130px;
+       
+    }
+    .continer{
+        width: 100%;
+    }
+    
+    .players,.blogs,.courses{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .player{
+        justify-content: center;
+        align-items: center;
+    }
+    .player,.blog,.course{
+        flex-direction: column;
+    }
+    .course{
+        margin-left:30%;
+    }
+}
